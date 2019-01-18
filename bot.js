@@ -8,7 +8,22 @@ const client = new Discord.Client();
       console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
 });
 
-   
+   client.on("message", async message => {
+    if(message.content.startsWith("العاب")) {
+        let help = new Discord.RichEmbed()
+            .setColor("RANDOM")
+            .setThumbnail(message.author.avatarURL)
+            .setDescription(`**العاب بوت __ 
+سؤال
+امثال
+اعلام
+عواصم
+فكك
+
+**`);
+            message.channel.sendEmbed(help); 
+    }
+});
 client.on('message', message => {
     if (message.content == "فكك") {
         var x = ['طيارة', 'اللهم صلي على سيدنا محمد', 'تفكيك', 'تجربة', 'مدرسة', 'معلم' , 'نقاط',
