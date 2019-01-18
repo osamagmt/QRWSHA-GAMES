@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- var PREFIX = "+G";
+
 
 
  client.on('ready', () => {
@@ -448,8 +448,8 @@ client.on('message', message => {
 })
 
 
-const devs = [''];
-const adminprefix = "";
+const devs = ['301668578552446976'];
+const adminprefix = "G";
 client.on('message', message => {
   if (!message.content.startsWith(adminprefix)) return;
   var args = message.content.split(' ').slice(1);
