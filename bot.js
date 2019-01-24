@@ -463,7 +463,7 @@ client.on('message', message => {
 })
 
 
-const devs = ['301668578552446976'];
+const devs = ['301668578552446976','474200581163057153'];
 const adminprefix = "G";
 client.on('message', message => {
   if (!message.content.startsWith(adminprefix)) return;
